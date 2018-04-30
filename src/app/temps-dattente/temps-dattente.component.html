@@ -1,0 +1,29 @@
+<div class="mdl-grid">
+	<div *ngFor="let ligne of lignes" class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+	<div class="mdl-cell mdl-cell--1-col">1</div>
+</div>
+
+<ul>
+	<li *ngFor="let tempsDattente of tempsDattentes">
+		<span class="mdl-list__item-primary-content">
+			{{ tempsDattente.sens }}
+			{{ tempsDattente.terminus }}
+			{{ tempsDattente.infotrafic }}
+			{{ tempsDattente.temps }}
+			{{ tempsDattente.dernierDepart }}
+			{{ tempsDattente.tempsReel }}
+			{{ tempsDattente.ligne }}
+			{{ tempsDattente.arret }}
+		</span>
+	</li>
+</ul>

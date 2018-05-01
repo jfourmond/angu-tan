@@ -1,14 +1,18 @@
 <div class="mdl-grid">
-    <div *ngFor="let ligne of lignes" class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-    <div class="mdl-cell mdl-cell--1-col">1</div>
-  </div>
+	<div *ngFor="let ligne of lignes" class="mdl-cell mdl-cell--2-col">
+		<div class="mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__title">
+				<h4>
+					Ligne {{ ligne.numLigne }}
+				</h4>
+			</div>
+			{{ ligne.typeLigne === 1 : 'show'}}
+		</div>
+
+		<i class="material-icons">directions_bus</i>
+
+		<i class="material-icons">tram</i>
+
+		<i class="material-icons">directions_boat</i>
+	</div>
+</div>

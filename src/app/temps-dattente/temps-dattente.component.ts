@@ -31,5 +31,4 @@ export class TempsDattenteComponent implements OnInit {
 		this.tempsDattenteService.getTempsdAttente(codeLieu)
 			.subscribe(tempsDattentes => this.tempsDattentes = tempsDattentes);
 	}
-
 }

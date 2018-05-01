@@ -11,7 +11,6 @@ import { ArretsComponent } from './arrets/arrets.component';
 import { TempsDattenteComponent } from './temps-dattente/temps-dattente.component';
 import { TempsDattenteService } from './temps-dattente.service';
 import { LignesComponent } from './lignes/lignes.component';
-import { LignesService } from './lignes.service';
 
 
 @NgModule({
@@ -30,8 +29,7 @@ import { LignesService } from './lignes.service';
 	],
 	providers: [
 		ArretService,
-		TempsDattenteService,
-		LignesService
+		TempsDattenteService
 	],
 	bootstrap: [AppComponent]
 })

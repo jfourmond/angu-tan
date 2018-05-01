@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { Arret } from '../beans/arret';
 import { ArretService } from '../arret.service';
-import { LignesService } from '../lignes.service';
 
 @Component({
 	selector: 'app-arrets',
@@ -15,8 +14,7 @@ export class ArretsComponent implements OnInit {
 	arrets: Arret[];
 
 	constructor(
-		private arretService: ArretService,
-		private lignesService: LignesService
+		private arretService: ArretService
 	) { }
 
 	ngOnInit() {
@@ -37,9 +35,5 @@ export class ArretsComponent implements OnInit {
 			this.arrets = this.fullArrets;
 		term = term.trim();
 		this.arrets = this.fullArrets.filter(a => a.libelle.toLowerCase().includes(term.toLowerCase()));
-	}
-
-	sendLignes(arret: Arret) {
-		this.lignesService.changeLigne(arret.ligne);
 	}
 }

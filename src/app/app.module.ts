@@ -10,15 +10,13 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ArretsComponent } from './arrets/arrets.component';
 import { TempsDattenteComponent } from './temps-dattente/temps-dattente.component';
 import { TempsDattenteService } from './temps-dattente.service';
-import { LignesComponent } from './lignes/lignes.component';
 
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		ArretsComponent,
-		TempsDattenteComponent,
-		LignesComponent
+		TempsDattenteComponent
 	],
 	imports: [
 		BrowserModule,

@@ -6,7 +6,7 @@ import { ArretService } from '../arret.service';
 @Component({
 	selector: 'app-arrets',
 	templateUrl: './arrets.component.html',
-	styleUrls: ['./arrets.component.css']
+	styleUrls: ['./arrets.component.css'],
 })
 export class ArretsComponent implements OnInit {
 	private fullArrets: Arret[];

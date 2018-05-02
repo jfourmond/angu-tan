@@ -5,14 +5,15 @@
 				<h4>
 					Ligne {{ ligne.numLigne }}
 				</h4>
+				{{ ligne.typeLigne }}
 			</div>
-			{{ ligne.typeLigne === 1 : 'show'}}
+			<!-- {{ ligne.typeLigne === 1 : 'show'}} -->
 		</div>
 
-		<i class="material-icons">directions_bus</i>
+		<i class="material-icons">{{ligne.typeLigne === 2 || ligne.typeLigne === 3 ? '' : 'directions_bus'}}</i>
 
-		<i class="material-icons">tram</i>
+		<i class="material-icons">{{ligne.typeLigne === 1 ? '' : 'tram'}}</i>
 
-		<i class="material-icons">directions_boat</i>
+		<i class="material-icons">{{ligne.typeLigne === 4 ? '' : 'directions_boat'}}</i>
 	</div>
 </div>

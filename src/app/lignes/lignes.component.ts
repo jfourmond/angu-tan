@@ -28,7 +28,9 @@ export class LignesComponent implements OnInit {
 		const codeLieu = this.route.snapshot.paramMap.get('codeLieu');
 		this.arretService.getArrets()
 			.subscribe(arrets => {
+				console.log(arrets.find(a => a.codeLieu === codeLieu));
 				this.lignes = arrets.find(a => a.codeLieu === codeLieu).ligne
+				console.log(this.lignes);
 			});
 	}
 }

@@ -7,7 +7,7 @@ import { LignesComponent } from './lignes/lignes.component';
 
 const routes: Routes = [
 	{ path: '', component: ArretsComponent },
-	{ path : ':codeLieu', component: LignesComponent }
+	{ path : ':codeLieu', component: TempsDattenteComponent }
 ];
 
 @NgModule({

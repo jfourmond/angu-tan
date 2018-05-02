@@ -3,7 +3,7 @@
 		<input #searchBox class="mdl-textfield__input" type="text" id="search-box" (keyup)="search(searchBox.value)">
 		<label class="mdl-textfield__label" for="search-box3">Rechercher Arrêt</label>
 	</div>
-	<li class="mdl-list__item mdl-list__item--two-line mdl-shadow--2dp arret-list" *ngFor="let arret of arrets" routerLink="/{{ arret.codeLieu }}" (click)="sendLignes(arret)">
+	<li class="mdl-list__item mdl-list__item--two-line mdl-shadow--2dp arret-list" *ngFor="let arret of arrets" routerLink="/{{ arret.codeLieu }}" >
 		<span class="mdl-list__item-primary-content">
 			<span class="mdl-list__item-avatar">{{ arret.codeLieu | slice:0:1 }}</span>
 			{{ arret.libelle }}

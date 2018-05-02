@@ -23,7 +23,7 @@ export class TempsDattenteService {
 		const url = this.tempsdAttenteURL + codeLieu;
 		return this.http.get<TempsDattente[]>(url)
 			.pipe(
-				tap(tempsDattent => this.log(`Temps d'attente récupérés`)),
+				tap(tempsDattente => this.log(`Temps d'attente récupérés`)),
 				catchError(this.handleError('getArrets', []))
 			);
 	}
